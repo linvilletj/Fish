@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Menu </title>
+<script src="simply.js"></script>
+<script>
+function start(){
+	sjs.open();
+	var menu_text = new sjs.Text("MENU",28,"blue");
+	menu_text.centerH();
+//Text
+var game_text = new sjs.Text("Use the Arrow Keys to Control the Player. Only eat enemies smaller than you!",28,"Orange");
+	game_text.centerH().offset(0, 30);
+//Start Button
+	var startBtn = new sjs.Button("Start", function(){
+		window.location = "fish.html";
+});
+		startBtn.center();
+	var info_text = new sjs.Text("Created By TJ Linville",20,"black");
+	info_text.bottom().centerH();
+		
+} //end start
+</script>
+</head>
+<body onload="start()">
+<h1> Fish </h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>
